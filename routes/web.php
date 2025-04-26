@@ -21,6 +21,7 @@ use App\Http\Controllers\AccountController;
 
 Route::get('/',[HomeController::class,'index'])->name('home');
 
+// Routes for project job portal
 
 Route::get('/account/registation',[AccountController::class,'registation'])->name('account.registation');
 
