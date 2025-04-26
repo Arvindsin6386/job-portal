@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AccountController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +20,13 @@ use Illuminate\Support\Facades\Route;
 //});
 
 Route::get('/',[HomeController::class,'index'])->name('home');
+
+
+Route::get('/account/registation',[AccountController::class,'registation'])->name('account.registation');
+
+Route::post('/account/process-Registation',[AccountController::class,'processRegistation'])->name('account.processRegistation');
+
+Route::get('/account/login',[AccountController::class,'login'])->name('account.login');
+
+
 
