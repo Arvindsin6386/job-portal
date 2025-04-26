@@ -28,5 +28,9 @@ Route::post('/account/process-Registation',[AccountController::class,'processReg
 
 Route::get('/account/login',[AccountController::class,'login'])->name('account.login');
 
+Route::post('/account/authenticate',[AccountController::class,'authenticate'])->name('account.authenticate');
+Route::get('/account/profile',[AccountController::class,'profile'])->name('account.profile');
+Route::get('/account/logout',[AccountController::class,'logout'])->name('account.logout');
+
 
 
